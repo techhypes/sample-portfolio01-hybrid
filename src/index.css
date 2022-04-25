@@ -19,6 +19,18 @@
   --transition: all 600ms ease;
 }
 
+/* ========  GREEN  ========
+:root {
+  --colour-bg: #0b0c10;
+  --colour-bg-variant: #1f2833;
+  --colour-primary: #66fcf1;
+  --colour-primary-variant: rgb(70,162,159, 0.4);
+  --colour-white: #fff;
+  --colour-light: rgba(255, 255, 255, 0.6);
+  --transition: all 600ms ease;
+}
+ */
+
 ::-webkit-scrollbar {
   display: none;
 }
