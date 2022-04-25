@@ -1,5 +1,4 @@
 import React from 'react'
-import me2 from '../assets/me-about2.jpg'
 import me from '../assets/me-about.jpg'
 import { FaAward } from 'react-icons/fa'
 import { HiLightBulb } from 'react-icons/hi'

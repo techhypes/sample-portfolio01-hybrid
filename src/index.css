@@ -19,10 +19,6 @@
   --transition: all 600ms ease;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -89,6 +85,49 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+/* small screens */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============= THEME ============= */
+body.light-theme {
+  --colour-bg: #fbfbff;
+  --colour-bg-variant: #2c2c6c;
+  --colour-primary: #4db5ff;
+  --colour-primary-variant: rgba(77, 181, 255, 0.4);
+  --colour-white: #000;
+  --colour-light: rgba(0, 0, 0, 0.6);
+}
+
+/* ============= TOP NAV SECTION ============= */
+.topnav__container {
+  background: var(--colour-bg);
+  background-image: url(./assets/bg-texture.png);
+}
+
+header a {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.topnav__icon {
+  font-size: 1.5rem;
+  color: var(--colour-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.topnav__icon:hover {
+  color: var(--colour-white);
 }
 
 /* ============= WELCOME SECTION ============= */
@@ -396,6 +435,36 @@ nav a.active {
     gap: 1rem;
   }
 }
+
+/* ============= TESTIMONIAL SECTION ============= */
+.client__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid var(--colour-primary-variant);
+}
+
+.testimonial {
+  background: var(--colour-bg-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.client__review {
+  color: var(--colour-light);
+  font-weight: 400;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--colour-primary);
+}
+
 
 /* ============= CONTACT SECTION ============= */
 .contact__container {

@@ -5,7 +5,7 @@ import { GrInstagram, GrGithub, GrYoutube } from 'react-icons/gr'
 const Footer = () => {
   return (
     <footer className='py-5 text-center'>
-      <a href="#" className='footer__logo'>HOPE LIM</a>
+      <a href="#" className='footer__logo'>YOUR NAME</a>
 
       <ul className="d-flex flex-wrap flex-column flex-sm-row justify-content-center gap-3 gap-sm-5 mt-0 mx-auto mb-5 ps-0">
         <li><a href="#">Home</a></li>
@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright mb-3 mb-sm-5">
-        <small>&copy; Hope Lim Jia Yong. All rights reserved.</small>
+        <small>&copy; Your Name Here. All rights reserved.</small>
       </div>
     </footer>
   )

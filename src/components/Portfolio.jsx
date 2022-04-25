@@ -1,5 +1,10 @@
 import React from 'react'
-import zen from '../assets/zen-sushi.jpg'
+import portfolio1 from '../assets/portfolio1.jpg'
+import portfolio2 from '../assets/portfolio2.jpg'
+import portfolio3 from '../assets/portfolio3.jpg'
+import portfolio4 from '../assets/portfolio4.jpg'
+import portfolio5 from '../assets/portfolio5.png'
+import portfolio6 from '../assets/portfolio6.jpg'
 
 
 const PortfolioWrapper = ({ image, title, github, youtube }) => (
@@ -22,27 +27,27 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <PortfolioWrapper image={zen} title='Restaurant Management System'
-          github='https://github.com/jiayong1008/laravel-zen-sushi/'
-          youtube='https://youtu.be/jOz4F5gLhxg/' />
-        <PortfolioWrapper image={zen} title='This is a portfolio title.'
-          github='https://github.com/jiayong1008/laravel-restaruant-zen/tree/main/'
-          youtube='https://youtu.be/jOz4F5gLhxg/' />
-        <PortfolioWrapper image={zen} title='This is a portfolio title.'
-          github='https://github.com/jiayong1008/laravel-restaruant-zen/tree/main/'
-          youtube='https://youtu.be/jOz4F5gLhxg/' />
-        {/* <PortfolioWrapper image={zen} title='This is a portfolio title.'
-          github='https://github.com/jiayong1008/laravel-restaruant-zen/tree/main/'
-          youtube='https://youtu.be/jOz4F5gLhxg/' />
-        <PortfolioWrapper image={zen} title='This is a portfolio title.'
-          github='https://github.com/jiayong1008/laravel-restaruant-zen/tree/main/'
-          youtube='https://youtu.be/jOz4F5gLhxg/' />
-        <PortfolioWrapper image={zen} title='This is a portfolio title.'
-          github='https://github.com/jiayong1008/laravel-restaruant-zen/tree/main/'
-          youtube='https://youtu.be/jOz4F5gLhxg/' /> */}
+        <PortfolioWrapper image={portfolio1} title='This is a portfolio title.'
+          github='#'
+          youtube='#' />
+        <PortfolioWrapper image={portfolio2} title='This is a portfolio title.'
+          github='#'
+          youtube='#' />
+        <PortfolioWrapper image={portfolio3} title='This is a portfolio title.'
+          github='#'
+          youtube='#' />
+        <PortfolioWrapper image={portfolio4} title='This is a portfolio title.'
+          github='#'
+          youtube='#' />
+        <PortfolioWrapper image={portfolio5} title='This is a portfolio title.'
+          github='#'
+          youtube='#' />
+        <PortfolioWrapper image={portfolio6} title='This is a portfolio title.'
+          github='#'
+          youtube='#' />
       </div>
     </section>
   )
 }
-// https://www.c-sharpcorner.com/article/how-to-deploy-react-application-on-github-pages/
+
 export default Portfolio

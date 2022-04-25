@@ -5,12 +5,18 @@ const webDevServices = [
   'Customized personal website.',
   'E-commerce website.',
   'Any system (PM me).',
+  'Lorem, ipsum dolor sit amet.',
+  'Lorem, ipsum dolor sit amet.',
+  'Lorem, ipsum dolor sit amet.',
 ];
 
 const web3Services = [
   'Basic mint page.',
   'Create customized token.',
   'Transfer token page.',
+  'Lorem, ipsum dolor sit amet.',
+  'Lorem, ipsum dolor sit amet.',
+  'Lorem, ipsum dolor sit amet.',
 ];
 
 const collaboration = [
@@ -18,6 +24,8 @@ const collaboration = [
   'Welcome any collaborators who are interested.',
   'Prefably possess skills in Solidity and React.',
   'We will build a billion-dollar empire tgt.',
+  'Lorem, ipsum dolor sit amet.',
+  'Lorem, ipsum dolor sit amet.',
 ];
 
 const ServiceWrapper = ({ title, services }) => (
