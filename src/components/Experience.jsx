@@ -6,7 +6,7 @@ const ExperienceDetail = ({ title, proficiency }) => (
     <BsFillPatchCheckFill className='experience__icon mt-2' />
     <div className='ps-2 w-100 d-flex flex-column justify-content-center align-items-center'>
       <h4>{title}</h4>
-      <small className='text-light ps-2'>{proficiency}</small>
+      <small className='text-lighter ps-2'>{proficiency}</small>
     </div>
   </article>
 );

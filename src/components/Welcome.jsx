@@ -7,9 +7,9 @@ const Welcome = () => {
   return (
   <section className="welcome pt-5 overflow-hidden">
         <div className="container pt-5 text-center h-100 position-relative">
-            <h5 className='pt-sm-4'>Hello, I'm</h5>
+            <h5 className='pt-4'>Hello, I'm</h5>
             <h1>Your Name Here</h1>
-            <h5 className="text-light">Fullstack Developer</h5>
+            <h5 className="text-lighter">Fullstack Developer</h5>
 
             {/* CTA */}
             <div className="mt-4 d-flex justify-content-center">

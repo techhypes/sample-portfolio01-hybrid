@@ -9,27 +9,30 @@
   list-style: none;
 }
 
+/* ==============  BLUE  ============= */
 :root {
-  --colour-bg: #1f1f38;
-  --colour-bg-variant: #2c2c6c;
-  --colour-primary: #4db5ff;
-  --colour-primary-variant: rgba(77, 181, 255, 0.4);
-  --colour-white: #fff;
-  --colour-light: rgba(255, 255, 255, 0.6);
-  --transition: all 600ms ease;
-}
+  --bg-hue: 240;
+  --primary-hue: 205;
 
-/* ========  CADET BLUE (More to cyan)  ========
-:root {
-  --colour-bg: #0b0c10;
-  --colour-bg-variant: #1f2833;
-  --colour-primary: #66fcf1;
-  --colour-primary-variant: rgb(70,162,159, 0.4);
-  --colour-white: #fff;
-  --colour-light: rgba(255, 255, 255, 0.6);
+  --colour-bg: hsl(var(--bg-hue), 29%, 17%);
+  --colour-bg-variant: hsl(var(--bg-hue), 42%, 30%);
+  --colour-primary: hsl(var(--primary-hue), 100%, 65%);
+  --colour-primary-variant: hsla(var(--primary-hue), 100%, 65%, 0.4);
+  --colour-white: hsl(0, 0%, 100%);
+  --colour-light: hsla(0, 0%, 100%, 0.6) !important;
+  --nav-bg: hsla(0, 0%, 0%, 0.3);
   --transition: all 600ms ease;
+} 
+
+body.light-theme {
+  --colour-bg: hsl(var(--bg-hue), 100%, 99%);
+  --colour-bg-variant: hsla(var(--primary-hue), 80%, 70%, 0.2);
+  --colour-primary: hsl(var(--primary-hue), 100%, 75%);
+  --colour-primary-variant: hsla(var(--primary-hue), 100%, 80%, 0.4);
+  --colour-white: hsl(0, 0%, 30%);
+  --colour-light: hsla(0, 0%, 20%, 0.6) !important;
+  --nav-bg: hsla(0, 0%, 0%, 0.1);
 }
- */
 
 ::-webkit-scrollbar {
   display: none;
@@ -40,7 +43,7 @@ body {
   background: var(--colour-bg);
   color: var(--colour-white);
   line-height: 1.7;
-  background-image: url(./assets/bg-texture.png);
+  /* background-image: url(./assets/bg-texture.png); */
 }
 
 /* ============= GENERAL STYLES ============= */
@@ -62,7 +65,7 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-.text-light {
+.text-lighter {
   color: var(--colour-light);
 }
 
@@ -110,20 +113,11 @@ img {
   }
 }
 
-/* ============= THEME ============= */
-body.light-theme {
-  --colour-bg: #fbfbff;
-  --colour-bg-variant: #2c2c6c;
-  --colour-primary: #4db5ff;
-  --colour-primary-variant: rgba(77, 181, 255, 0.4);
-  --colour-white: #000;
-  --colour-light: rgba(0, 0, 0, 0.6);
-}
 
 /* ============= TOP NAV SECTION ============= */
 .topnav__container {
   background: var(--colour-bg);
-  background-image: url(./assets/bg-texture.png);
+  /* background-image: url(./assets/bg-texture.png); */
 }
 
 header a {
@@ -197,7 +191,7 @@ header a {
 
 /* ============= NAV SECTION ============= */
 nav {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--nav-bg);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -273,6 +267,7 @@ nav a.active {
   color: var(--colour-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px blue;
 }
 
 .about__card h5 {

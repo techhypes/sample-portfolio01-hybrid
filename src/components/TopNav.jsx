@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HiOutlineSun, HiSun } from 'react-icons/hi'
+import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi'
 
 const TopNav = () => {
   const [dark, setDark] = useState(true);
@@ -7,8 +7,10 @@ const TopNav = () => {
   const switchDark = (dark) => {
     if (dark) {
       setDark(true);
+      document.querySelector('body').classList.remove('light-theme');
     } else {
       setDark(false);
+      document.querySelector('body').classList.add('light-theme');
     } 
   };
 
@@ -18,7 +20,7 @@ const TopNav = () => {
           <header className='d-flex justify-content-between'>
               <a href="#">Name</a>
               {dark && (<HiOutlineSun className='topnav__icon' onClick={() => switchDark(false)} />)}
-              {!dark && (<HiSun className='topnav__icon' onClick={() => switchDark(true)} />)}            
+              {!dark && (<HiOutlineMoon className='topnav__icon' onClick={() => switchDark(true)} />)}            
           </header>
         </div>
       </div>

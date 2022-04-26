@@ -4,7 +4,7 @@ import { TopNav, Welcome, Nav, About, Experience, Services,
 const App = () => {
   return (
     <>
-      {/* <TopNav /> */}
+      <TopNav />
       <Welcome />
       <Nav />
       <About />

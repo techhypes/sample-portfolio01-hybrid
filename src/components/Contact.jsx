@@ -37,11 +37,11 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options d-flex flex-column gap-2">
-          <ContactDetail icon={<HiOutlineMail className='contact__option-icon' />} name='Email' value='jiayong1008@gmail.com'
+          <ContactDetail icon={<HiOutlineMail className='contact__option-icon' />} name='Email' value='yourmail@gmail.com'
             link='mailto:jiayong1008@gmail.com' />
-          <ContactDetail icon={<RiMessengerLine className='contact__option-icon' />} name='Messenger' value='Jia Yong Lim'
-            link='https://m.me/100070080600098' />
-          <ContactDetail icon={<BsWhatsapp className='contact__option-icon' />} name='WhatsApp' value='(N/A for now)'
+          <ContactDetail icon={<RiMessengerLine className='contact__option-icon' />} name='Messenger' value='Your Name'
+            link='https://m.me/100070080600098/' />
+          <ContactDetail icon={<BsWhatsapp className='contact__option-icon' />} name='WhatsApp' value='+6012-345 6789'
             link='#' /> 
             {/* https://api.whatsapp.com/send?phone={0123456789} */}
         </div>
