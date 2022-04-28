@@ -342,6 +342,10 @@ nav a.active {
   .experience__container {
     grid-template-columns: 1fr;
   }
+
+  .experience__container > div {
+    padding: 2rem 1.5rem;
+  }
 }
 
 /* ============= SERVICES SECTION ============= */
